@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mostrar mensaje de carga
   cardsContainer.innerHTML = `
-    <div class="text-center my-5">
+    <div class="text-center my-5 bg-warning">
       <div class="spinner-border text-warning" role="status">
         <span class="visually-hidden">Cargandooooo desesperado...</span>
       </div>
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // SI HAY ERRooooooooOR 
     .catch(error => {
         console.error('Errooooooooor cards:', error);
-        cardsContainer.innerHTML = `<p class="text-danger text-center mt-5">Erroorrrrrrrrrrrrrr cards.</p>`;
+        cardsContainer.innerHTML = `<p class="text-danger text-center p-5 bg-warning">Erroorrrrrrrrrrrrrr cards.</p>`;
     });
 });
 
